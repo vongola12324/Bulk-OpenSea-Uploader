@@ -15,7 +15,7 @@ A simple script which bulk uploads your NFT's to OpenSea without having to deplo
 
 ### Instructions
 
-1. Make a new `.env` file in `src` and inside of it specify your seed phrase `SEED_PHRASE=` and password `PASSWORD=`
+1. Make a new `.env` file in `src` (or copy `.example.env`) and inside of it specify your environment.
 2. Copy your NFT assets you wish to upload to `src/data/assets`, then inside of `src/data/metadata.json`, specify the metadata of each asset you wish to upload as an NFT to OpenSea. By default, the script only accepts `name` and `asset` attributes, where the `name` is the name of the NFT, and the `asset` is the name of the asset stored in `src/data/assets`
 3. Set your desired network in `main.py`. If you wish to use a default network specified by Metamask, uncomment the `uploader.set_network("", 0, 1) # Use a default network provided by Metamask` line, and replace the third argument with the position of where the default network appears in the Metamask networks list.
 4. Inside of `src` run `pipenv install`
